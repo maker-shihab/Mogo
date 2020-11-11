@@ -1,0 +1,177 @@
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .header_content-title-1 {
+        font-size: 4.8rem;
+    }
+
+    .header_content-title-2 {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .counter {
+        font-size: 5.8rem;
+    }
+
+    .brand-image-body {
+        height: 8rem;
+        width: auto;
+    }
+
+    .service-content hr {
+        display: none;
+    }
+
+    .menu-area ul li a {
+        font-size: 1.3rem;
+        padding: 1rem 1rem !important;
+    }
+
+    .w-100 {
+        display: none !important;
+    }
+
+    .header_btn {
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+    }
+
+    .service__cotemt--body {
+        padding: 0 0 2rem 0;
+    }
+
+    .section-padding {
+        padding: 5rem 0;
+    }
+
+    .google-map-subscribe {
+        display: flex;
+        align-items: center;
+    }
+
+    .google-map-subscribe button {
+        font-size: 1.4rem;
+        padding: .7rem 1rem;
+        margin: 0px;
+    }
+
+    .google-map-subscribe input {
+        width: 20rem;
+        font-size: 1.4rem;
+    }
+
+    .footer-socail-icons {
+        padding-bottom: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 58%;
+    }
+
+    .menu-area ul li a::before {
+        display: none;
+    }
+
+    .menu-area ul li:nth-child(7) a {
+        display: none;
+    }
+
+    .menu-area ul li:last-child a {
+        display: none;
+    }
+
+    .cunter_up-body h2 {
+        padding: 1rem 0;
+    }
+
+    .service-content {
+        padding-top: 8rem;
+        text-align: center;
+    }
+
+    .service-content-title {
+        padding: 1.5rem;
+    }
+
+    .card {
+        margin-top: -1rem;
+    }
+
+    .review-subtitle {
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    .footer-blogs h2,
+    .footer-instagrum h2 {
+        padding: 3rem 0 0 0;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    .curd-body {
+        margin: 2rem 0;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header_content-title-1 {
+        font-size: 4.3rem;
+    }
+
+    .header_content-title-2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .brand-image-body {
+        height: 12rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    .curd-body {
+        margin: 2rem 0;
+    }
+
+    .story-blog-4 {
+        margin: 3rem auto !important;
+    }
+
+    .about-img .col-sm-4 {
+        padding: 2rem 0;
+    }
+
+    .service-content-subtitle {
+        max-width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .main-footer p {
+        padding: 2rem 0;
+    }
+
+    .scrollBtn a i {
+        bottom: 3.5rem;
+    }
+
+}
+
+/* Small devices (portrait phones, less than 480px) */
+@media (max-width: 480px) {}
