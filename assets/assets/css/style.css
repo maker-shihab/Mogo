@@ -1,0 +1,991 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+/* Common Css Hear */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: "Kaushan Script", cursive;
+
+  font-family: "Montserrat", sans-serif;
+  
+  font-weight: 400;
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.section-padding {
+  padding: 60px 0;
+  padding: 6rem 0;
+}
+
+.section-title {
+  font-size: 30px;
+  font-size: 3rem;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 10px;
+  padding-top: 1rem;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  text-align: center;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  width: 6rem;
+  height: 3px;
+  height: 0.3rem;
+  left: calc(50% - 3rem);
+  background-color: #f38181;
+  bottom: -30px;
+  bottom: -3rem;
+}
+
+.section-prgrp {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding: 60px 0px 40px 0px;
+  padding: 6rem 0px 4rem 0px;
+  text-align: center;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  outline: none;
+}
+
+/* Locol Css Hear */
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.header-area {
+  background: url(../image/main-background.jpg) no-repeat scroll 0 0 / cover;
+}
+
+.navigation {
+  padding: 10px 0;
+  padding: 1rem 0;
+}
+
+.menu-area {
+  padding-top: 5px;
+  padding-top: 0.5rem;
+}
+
+.menu-area {
+  padding: 20px 0;
+  padding: 2rem 0;
+}
+
+.logo h2 {
+  font-size: 30px;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.fas.fa-bars {
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: -3px;
+}
+
+.menu-area ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #ffffff;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  position: relative;
+  padding: 10px 15px !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.menu-area ul li a:before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  left: calc(50% - 35%);
+  height: 3px;
+  height: 0.3rem;
+  background-color: #fce38a;
+  top: 100%;
+  bottom: 50%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-area ul li a:hover {
+  color: #fce38a;
+}
+
+.menu-area ul li a:hover:before {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+}
+
+.header_content {
+  padding: 60px 0;
+  padding: 6rem 0;
+}
+
+.header_content-title-1 {
+  font-size: 52px;
+  font-size: 5.2rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  text-align: center;
+}
+
+.header_content-title-2 {
+  font-size: 90px;
+  font-size: 9rem;
+  line-height: 90px;
+  line-height: 9rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header_btn:before {
+  position: absolute;
+  content: "";
+  width: 90px;
+  width: 9rem;
+  height: 3px;
+  height: 0.3rem;
+  left: calc(50% - 4.5rem);
+  background-color: #ffffff;
+  top: -100%;
+}
+
+.header_btn {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 10px 25px;
+  padding: 1rem 2.5rem;
+  border: 2px solid #ffffff;
+  border: 0.2rem solid #ffffff;
+  position: relative;
+  margin-top: 120px;
+  margin-top: 12rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.header_btn:hover {
+  background: #fff;
+  color: #ff953cdb;
+}
+
+/*======================================== */
+/************* About Area *************** */
+/* ====================================== */
+
+.about-img a img:hover {
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.cunter_up {
+  background: #95e1d3;
+}
+
+.cunter_up-body {
+  padding: 30px 0;
+  padding: 3rem 0;
+}
+
+.counter {
+  font-size: 72px;
+  font-size: 7.2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.cunter_up-body h2 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.service-content {
+  padding-top: 80px;
+  padding-top: 8rem;
+}
+
+.servic-icone i {
+  color: #95e1d3;
+  font-size: 50px;
+  font-size: 5rem;
+}
+
+.service-content-subtitle {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  color: #222;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-content-title {
+  color: #333333;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.service__cotemt--body {
+  padding-left: 15px;
+  padding-left: 1.5rem;
+}
+
+.servic-image {
+  margin-top: -5px;
+  margin-top: -.5rem;
+}
+
+.w-100 {
+  margin: 30px 0;
+  margin: 3rem 0;
+  background: #999999;
+  height: 1px;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+
+.unic-design {
+  background: url(../image/unic-design-bg.jpg) no-repeat scroll 0 0 / cover;
+  padding-top: 60px;
+  padding-top: 6rem;
+}
+
+.unic-body-image {
+  max-width: 500px;
+  max-width: 50rem;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-top: 5rem;
+}
+
+.unic-body-image img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -55px;
+  margin-bottom: -5.5rem;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.work-area-photography {
+  /*! padding-top: 3rem; */
+}
+
+.card-body {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+  text-align: justify;
+}
+
+.card-header i {
+  font-size: 26px;
+  font-size: 2.6rem;
+  color: #95e1d3;
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
+}
+
+.card-header button {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #333333 !important;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-header button span {
+  padding-left: 20px;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: -5px;
+  margin-top: -.5rem;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.revier-area {
+  background-color: #f8f8f8;
+}
+
+.review-subtitle {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 36px;
+  color: #999999;
+  font-weight: 300;
+  max-width: 85%;
+}
+
+.revw-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-image i {
+  font-size: 70px;
+  font-size: 7rem;
+  color: #95e1d3;
+  border: 2px solid #95e1d3;
+  padding: 20px;
+  padding: 2rem;
+}
+
+.review-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+  position: relative;
+}
+
+.review-title:after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  width: 6rem;
+  height: 3px;
+  height: 0.3rem;
+  background-color: #f38181;
+  top: 13px;
+  top: 1.3rem;
+  right: calc(50% - -6rem);
+}
+
+.reciew-pdng {
+  padding: 40px 0;
+  padding: 4rem 0;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.curd-area {
+  padding-top: 40px;
+  padding-top: 4rem;
+}
+
+.card {
+  margin-top: 5px;
+  margin-top: .5rem;
+}
+
+.team-text {
+  padding: 20px 0;
+  padding: 2rem 0;
+  background: rgb(253, 246, 246);
+}
+
+.team-text h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team-text p {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.curd-body {
+  position: relative;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+  overflow: hidden;
+}
+
+.curd-body:hover:after {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.curd-body:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #e89283;
+  left: 500px;
+  left: 50rem;
+  bottom: 500px;
+  bottom: 50rem;
+  opacity: .45;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
+  z-index: 11;
+}
+
+.curd-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-icone {
+  position: absolute;
+  top: 500px;
+  top: 50rem;
+  left: 0;
+  z-index: 22;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  right: 500px;
+  right: 50rem;
+}
+
+.curd-body:hover .team-icone {
+  top: 43%;
+  right: 0;
+}
+
+.team-icone ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-icone ul li {
+  margin: 0 5px;
+  margin: 0 .5rem;
+}
+
+.team-icone ul li a {
+  font-size: 24px;
+  font-size: 2.4rem;
+  height: 40px;
+  height: 4rem;
+  width: 40px;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  text-align: center;
+  line-height: 39px;
+  line-height: 3.9rem;
+  color: #6df0d8;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  top: 500px;
+  top: 50rem;
+}
+
+.team-icone ul li a:hover {
+  color: #e89283;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.our-work-image-gallery img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.brand-image-body {
+  height: 150px;
+  height: 15rem;
+  width: auto;
+}
+
+
+.wokr-now-img {
+  height: auto;
+  width: 110px;
+  width: 11rem;
+  height: 110px;
+  height: 11rem;
+  border-radius: 50%;
+}
+
+/* Peaple say revier  */
+.review-image img {
+  height: 150px;
+  height: 15rem;
+  width: 150px;
+  width: 15rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.happy-client-area {
+  background: url(../image/hpy-vlients-bg.jpg) no-repeat scroll 0 0 / cover;
+}
+
+.servic-image img {
+  height: 100px;
+  height: 10rem;
+  width: 100px;
+  width: 10rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Our Story Area */
+.story-blog {
+  padding-top: 80px;
+  padding-top: 8rem;
+}
+
+.story-body {
+  padding: 20px 0 0 0;
+  padding: 2rem 0 0 0;
+}
+
+.story-body h3 a{
+  font-size: 20px;
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+.story-body p {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  color: #999999;
+  font-weight: 400;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.story-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.story-icone-eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  margin-right: 1rem;
+}
+
+.story-icone-eye i {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #95e1d3;
+}
+
+.story-icone-eye p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 1px 5px;
+  margin: 0.1rem 0.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  color: #999999;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.google-map {
+  cursor: pointer;
+  position: relative;
+}
+
+.google-map-body iframe {
+  width: 100%;
+  height: 350px;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  opacity: .35;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+  margin-top: 20px;
+  margin-top: 2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.google-map-body iframe:hover {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.google-map-icone img {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.google-map-icone {
+  position: absolute;
+  top: 30%;
+  left: 46%;
+}
+
+
+.google-map-icone i {
+  font-size: 40px;
+  font-size: 4rem;
+  color: #f38181;
+  padding: 15px 0;
+  padding: 1.5rem 0;
+}
+
+.google-map-text h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #f38181;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.google-map-text h2:after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  width: 6rem;
+  height: 3px;
+  height: 0.3rem;
+  background-color: #f38181;
+  right: calc(50% - 3rem);
+  bottom: -20px;
+  bottom: -2rem;
+}
+
+/*======================================== */
+/************* Header Area *************** */
+/* ====================================== */
+.footer-main-area {
+  padding-top: 60px;
+  padding-top: 6rem;
+}
+
+.fotter-logo h2 {
+  color: #999999;
+}
+
+.footer-brand-text p,
+.footer-socail-icons p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-brand-text .follwer {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.footer-socail-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-socail-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-socail-icons ul li a {
+  color: #95e1d3;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 10px 10px;
+  padding: 1rem 1rem;
+}
+
+.footer-socail-icons ul li a:hover {
+  color: #f38181;
+}
+
+.google-map-subscribe input {
+  width: 70%;
+  height: 40px;
+  height: 4rem;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  padding: 5px;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.google-map-subscribe button {
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  height: 40px;
+  height: 4rem;
+  margin: 0px;
+  width: 120px;
+  width: 12rem;
+}
+
+.footer-blogs-content {
+  padding-top: 25px;
+  padding-top: 2.5rem;
+}
+
+.footer-blogs h2,
+.footer-instagrum h2 {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+.blog-pragrap {
+  font-size: 12px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+/* footer area all padding Hear */
+.footer-instagrum-image,
+.footer-end-p a{
+  padding-top: 20px;
+  padding-top: 2rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.footer-end-p {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+  margin-top: 30px;
+  margin-top: 3rem;
+}
+
+.footer-socail-icons {
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+
+/* main footer */
+.main-footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  background: #f7f7f7;
+  padding: 30px 0;
+  padding: 3rem 0;
+  margin: 0;
+}
+
+.main-footer hr {
+  margin: 0;
+  padding: 0;
+}
+
+.shihab {
+  text-transform: uppercase;
+  color: #f38181;
+  font-weight: 400;
+  font-family: "Kaushan Script";
+}
+
+/*======================================== */
+/************* Back To top*************** */
+/* ====================================== */
+.scrollBtn a i {
+  font-size: 70px;
+  font-size: 7rem;
+  color: #ffb400;
+  position: fixed;
+  bottom: 30px;
+  bottom: 3rem;
+  right: 30px;
+  right: 3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.scrollBtn a i:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
